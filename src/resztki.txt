@@ -1,0 +1,126 @@
+//     Sciana *przezrocze = new Sciana(new Punkt(-10.0f, -10.0f,  1.0f),
+//                                     new Punkt (0.0f , -10.0f,  1.0f),
+//                                     new Punkt (0.0f , -10.0f, 11.0f),
+//                                     new Punkt(-10.0f, -10.0f, 11.0f) );
+//     swiat->addToSwiat(11, przezrocze);
+    //przezrocze->setUseTexture(true, textures[3]);
+//     przezrocze->setAlfa(0.2);
+
+//     Sciana *przezrocze2 = new Sciana(new Punkt(-10.0f, -10.0f,  1.0f),
+//                                     new Punkt (0.0f , -10.0f,  1.0f),
+//                                     new Punkt (0.0f , -10.0f, 11.0f),
+//                                     new Punkt(-10.0f, -10.0f, 11.0f) );
+//     swiat->addToSwiat(12, przezrocze2);
+    //przezrocze->setUseTexture(true, textures[3]);
+//     przezrocze2->setKolor(new Kolor(0.0f, 0.0f, 1.0f, 0.1f) );
+    //przezrocze2->setAlfa(0.8);
+    
+    
+    //     Spodek *spodek = new Spodek();
+//     swiat->addToSwiat(4,spodek);
+    
+    
+//     Okrag *okrag = new Okrag();
+//     swiat->addToSwiat(5,okrag);
+    
+//     Walec *walec = new Walec();
+//     swiat->addToSwiat(6,walec);
+    
+  /*  Fotel *fotel = new Fotel(); */ // zamiast Obiekt3D *fotel = new Fotel(); // i wszystkie tak poprawilem, bo po co je obcinac ??, tak moge od razu na nich operowac
+   /* swiat->addToSwiat(7,fotel);*/ // z wszystkimi opcjami jakie posiadaja a nie tylko tymi co dziedzicza
+   
+   
+   //     Sciana *sc2 = new Sciana(new Punkt(1, 0.5, 0),
+//                              new Punkt(0.5, -0.5, 0),
+//                              new Punkt(-0.5, -0.5, 0),
+//                              new Punkt(-0.5, 0.5, 0)
+//                             );
+    
+//     swiat->addToSwiat(2,sc2);
+
+
+//     Sciana *sc1 = new Sciana(new Punkt(0.5, 0.5, 0),
+//                            new Punkt(0.5, -0.5, 0),
+//                            new Punkt(-0.5, -0.5, 0),
+//                            new Punkt(-0.5, 0.5, 0)
+//                           );
+//     swiat->addToSwiat(0,sc1);
+
+
+
+
+
+    
+    
+//     Sciana* sc1 = swiat->getSciana(0);
+//     //sc1->rotate(-alfa, 0, 0, 1);
+//     //sc1->translate(2,0,0);
+//     //sc1->rotate(alfa, 0, 0, 1);
+//     sc1->setUseTexture(true, textures[0]);
+//     sc1->translate(5,3,6);
+//     sc1->add();
+
+//     Sciana* sc2 = swiat->getSciana(2);
+//     
+//     sc2->rotate(alfa, 0, 0, 1);
+//     sc2->translate(2,0,0);
+//     sc2->rotate(alfa, 0, 0, 1);
+//     sc2->add();
+
+
+
+   //Obiekt3D *walec = swiat->getElement(6);
+  //   walec->translate(2,2,2);
+   //  walec->rotate(1.2*alfa, 0, 1, 0);
+    // walec->scale(1,1,10);
+    // walec->add();
+
+//     glDisable(GL_TEXTURE_2D);
+ //   Obiekt3D *fotel = swiat->getElement(7);
+  //  fotel->translate(10,10,0.1)    ;
+  //   fotel->add();
+  
+  
+  
+  //
+//
+   //  Sciana *przezrocze = reinterpret_cast< Sciana* >( swiat->getElement(11) );
+   //  glEnable(GL_BLEND);
+   //  glDisable(GL_DEPTH_TEST);
+   //  przezrocze->add();
+   //  glDisable(GL_BLEND);
+   //  glEnable(GL_DEPTH_TEST);
+// 
+//     Sciana *przezrocze2 = reinterpret_cast< Sciana* >( swiat->getElement(12) );
+//     glEnable(GL_BLEND);
+//     glDisable(GL_DEPTH_TEST);
+//     przezrocze2->translate(5.0f, 0.0f, 0.0f);
+//     przezrocze2->add();
+//     glDisable(GL_BLEND);
+//     glEnable(GL_DEPTH_TEST);
+// 
+// 
+//     
+
+
+
+ //glBegin(GL_LINES);
+      //      glVertex3f(a->getX(), a->getY(), a->getZ());
+      //      glVertex3f(a->getX() + n->getX(), a->getY() + n->getY(), a->getZ() + n->getZ());
+      //      glEnd();
+      
+      
+      
+            //ponizszy kod rysuje wektor normalny,
+//      glBegin(GL_LINES);
+//       glColor3f(0.0, 1.0, 0.0); //zielona o X
+//       glVertex3f( a->getX(), a->getY(), a->getZ());
+//       glVertex3f(a->getX()+n->getX(),a->getX()+ n->getY(),a->getX()+ n->getZ());
+//      glEnd();
+
+
+
+ glVertex4f(a->getX(), a->getY(), a->getZ() ,kolor->getAlfa());
+        glVertex4f(b->getX(), b->getY(), b->getZ() ,kolor->getAlfa());
+        glVertex4f(c->getX(), c->getY(), c->getZ() ,kolor->getAlfa());
+        glVertex4f(d->getX(), d->getY(), d->getZ() ,kolor->getAlfa());
